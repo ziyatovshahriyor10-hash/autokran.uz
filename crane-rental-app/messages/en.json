@@ -1,0 +1,74 @@
+{
+  "Navbar": {
+    "about": "About Us",
+    "fleet": "Our Fleet",
+    "partners": "Partners",
+    "call": "Call Us",
+    "home": "Home"
+  },
+  "Hero": {
+    "badge": "Professional Crane Services",
+    "title1": "POWERFUL",
+    "title2": "EQUIPMENT FOR",
+    "title3": "COMPLEX PROJECTS",
+    "viewFleet": "VIEW FLEET",
+    "contact": "CONTACT US",
+    "expYears": "YEARS EXPERIENCE",
+    "service": "SERVICE",
+    "safety": "SAFETY"
+  },
+  "About": {
+    "badge": "Experienced Team",
+    "featuresTitle": "WHY <br/><span>CHOOSE US?</span>",
+    "title": "WE WORK SO THAT YOUR PROJECTS <br/><span>DO NOT STOP</span>",
+    "description": "Under the \"AUTOKRAN.UZ\" brand, we have been a reliable partner in construction and installation work for more than 12 years.",
+    "projects": "Completed Projects",
+    "experience": "Years Experience",
+    "features": {
+      "f1": {
+        "title": "FAST & QUALITY SERVICE",
+        "desc": "We value every customer's time. Therefore, we deliver the equipment at the agreed time."
+      },
+      "f2": {
+        "title": "AFFORDABLE PRICES",
+        "desc": "For medium and long-term rentals, we always have special discounts and favorable offers."
+      },
+      "f3": {
+        "title": "TECHNICAL QUALITY",
+        "desc": "All our cranes are new and fully meet international safety standards (LOKI, PPO)."
+      }
+    }
+  },
+  "Partners": {
+    "title1": "RELIABLE",
+    "title2": "PARTNERS",
+    "projectsTitle": "RELIABLE PROJECTS",
+    "subtitle": "We provide quality service to everyone."
+  },
+  "Fleet": {
+    "title": "For your project",
+    "subtitle": "BEST EQUIPMENT",
+    "description": "We have modern and safe mobile cranes with lifting capacity from 30 to 130 tons. All our equipment undergoes regular inspection.",
+    "ton": "tons",
+    "order": "RENT NOW",
+    "mainBoom": "Main boom",
+    "maxBoom": "Max. boom",
+    "rentPrice": "MONTHLY RENT PRICE",
+    "currency": "sum",
+    "craneDescription": "Lifting capacity up to {ton} tons. Reliable and fast equipment."
+  },
+  "Footer": {
+    "description": "Professional crane services across Uzbekistan. Reliable and safe construction with us.",
+    "links": "INFORMATION",
+    "contact": "CONTACT",
+    "quickContact": "QUICK CONTACT",
+    "expertCall": "Our specialist will call you back within 5 minutes.",
+    "telegram": "WRITE IN TELEGRAM",
+    "rights": "ALL RIGHTS RESERVED.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "addressLabel": "ADDRESS",
+    "phoneLabel": "PHONE",
+    "faq": "FAQ"
+  }
+}

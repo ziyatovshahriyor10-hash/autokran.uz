@@ -1,0 +1,241 @@
+export interface Crane {
+  id: number;
+  model: string;
+  brand: string;
+  tonnage: number;
+  mainBoom: number;
+  auxBoom: number;
+  image: string;
+  pricePerMonth: number;
+  description: string;
+  specs: {
+    enginePower?: string;
+    maxSpeed?: string;
+    operatingWeight?: string;
+    maxLiftHeight?: string;
+    mainBoomLength?: string;
+    maxLoadCapacity?: string;
+    width?: string;
+    length?: string;
+    weight?: string;
+    engine?: string;
+  };
+  available: boolean;
+}
+
+export const craneData: Crane[] = [
+  // 30t XCMG - 4 units
+  {
+    id: 1,
+    model: "XCMG-30K5-I",
+    brand: "XCMG",
+    tonnage: 30,
+    mainBoom: 40.4,
+    auxBoom: 48.7,
+    image: "/images/XCMG-30K5-I.jpeg",
+    pricePerMonth: 60000000,
+    description: "Yuk ko'tarish quvvati 30 tonnagacha. Asosiy ko'tarish balandligi 40,4 m. Maksimal ko'tarish balandligi 48,7 m.",
+    specs: {
+      enginePower: "213 kVt",
+      maxSpeed: "85 km/soat",
+      operatingWeight: "30 000 kg",
+      maxLiftHeight: "48.7 m",
+      mainBoomLength: "40.4 m",
+      maxLoadCapacity: "30 t"
+    },
+    available: true
+  },
+  {
+    id: 101,
+    model: "XCMG-30K5-I",
+    brand: "XCMG",
+    tonnage: 30,
+    mainBoom: 40.4,
+    auxBoom: 48.7,
+    image: "/images/XCMG-30K5-I.jpeg",
+    pricePerMonth: 60000000,
+    description: "Yuk ko'tarish quvvati 30 tonnagacha. Ishonchli va tezkor texnika.",
+    specs: {
+      enginePower: "213 kVt",
+      maxSpeed: "85 km/soat",
+      operatingWeight: "30 000 kg",
+      maxLiftHeight: "48.7 m",
+      mainBoomLength: "40.4 m",
+      maxLoadCapacity: "30 t"
+    },
+    available: true
+  },
+  {
+    id: 102,
+    model: "XCMG-30K5-I",
+    brand: "XCMG",
+    tonnage: 30,
+    mainBoom: 40.4,
+    auxBoom: 48.7,
+    image: "/images/XCMG-30K5-I.jpeg",
+    pricePerMonth: 60000000,
+    description: "Yuk ko'tarish quvvati 30 tonnagacha. Qurilish maydonlari uchun qulay.",
+    specs: {
+      enginePower: "213 kVt",
+      maxSpeed: "85 km/soat",
+      operatingWeight: "30 000 kg",
+      maxLiftHeight: "48.7 m",
+      mainBoomLength: "40.4 m",
+      maxLoadCapacity: "30 t"
+    },
+    available: true
+  },
+  {
+    id: 103,
+    model: "XCMG-30K5-I",
+    brand: "XCMG",
+    tonnage: 30,
+    mainBoom: 40.4,
+    auxBoom: 48.7,
+    image: "/images/XCMG-30K5-I.jpeg",
+    pricePerMonth: 60000000,
+    description: "Yuk ko'tarish quvvati 30 tonnagacha. Yuqori aniqlikdagi boshqaruv.",
+    specs: {
+      enginePower: "213 kVt",
+      maxSpeed: "85 km/soat",
+      operatingWeight: "30 000 kg",
+      maxLiftHeight: "48.7 m",
+      mainBoomLength: "40.4 m",
+      maxLoadCapacity: "30 t"
+    },
+    available: true
+  },
+
+  // 50t XCMG - 2 units
+  {
+    id: 2,
+    model: "XCMG-QY50KA",
+    brand: "XCMG",
+    tonnage: 50,
+    mainBoom: 43.5,
+    auxBoom: 57.7,
+    image: "https://www.gruzovik.com/img/xxl/39743/XCMG-QY50KC-QY50KA-QY50K-II-QY50K-Kitay_39743_5166300626742.jpg",
+    pricePerMonth: 75000000,
+    description: "Yuk ko'tarish quvvati 50 tonnagacha. Asosiy ko'tarish balandligi 43,5 m. Maksimal ko'tarish balandligi 57,7 m.",
+    specs: {
+      enginePower: "247 kVt",
+      maxSpeed: "80 km/soat",
+      operatingWeight: "42 000 kg",
+      maxLiftHeight: "57.7 m",
+      mainBoomLength: "43.5 m",
+      maxLoadCapacity: "50 t"
+    },
+    available: true
+  },
+  {
+    id: 201,
+    model: "XCMG-QY50KA",
+    brand: "XCMG",
+    tonnage: 50,
+    mainBoom: 43.5,
+    auxBoom: 57.7,
+    image: "https://www.gruzovik.com/img/xxl/39743/XCMG-QY50KC-QY50KA-QY50K-II-QY50K-Kitay_39743_5166300626742.jpg",
+    pricePerMonth: 75000000,
+    description: "Yuk ko'tarish quvvati 50 tonnagacha. Har qanday murakkablikdagi ishlar uchun.",
+    specs: {
+      enginePower: "247 kVt",
+      maxSpeed: "80 km/soat",
+      operatingWeight: "42 000 kg",
+      maxLiftHeight: "57.7 m",
+      mainBoomLength: "43.5 m",
+      maxLoadCapacity: "50 t"
+    },
+    available: true
+  },
+
+  {
+    id: 3,
+    model: "SANY STC500",
+    brand: "SANY",
+    tonnage: 50,
+    mainBoom: 43.5,
+    auxBoom: 57.7,
+    image: "https://www.palfsany.com/upload/iblock/1af/IMG_5108.jpg",
+    pricePerMonth: 75000000,
+    description: "Yuk ko'tarish quvvati 50 tonnagacha. Yuqori sifatli va ishonchli SANY texnikasi.",
+    specs: {
+      enginePower: "247 kVt",
+      maxSpeed: "80 km/soat",
+      operatingWeight: "42 000 kg",
+      maxLiftHeight: "57.7 m",
+      mainBoomLength: "43.5 m",
+      maxLoadCapacity: "50 t"
+    },
+    available: true
+  },
+  {
+    id: 4,
+    model: "ZOOMLION-QY80",
+    brand: "ZOOMLION",
+    tonnage: 80,
+    mainBoom: 44.5,
+    auxBoom: 64.5,
+    image: "/images/zoomlion_80t_new.jpg",
+    pricePerMonth: 90000000,
+    description: "Yuk ko'tarish quvvati 80 tonnagacha. Asosiy ko'tarish balandligi 44,5 m. Maksimal ko'tarish balandligi 64,5 m.",
+    specs: {
+      enginePower: "310 kVt",
+      maxSpeed: "75 km/soat",
+      operatingWeight: "55 000 kg",
+      maxLiftHeight: "64.5 m",
+      mainBoomLength: "44.5 m",
+      maxLoadCapacity: "80 t"
+    },
+    available: true
+  },
+  {
+    id: 5,
+    model: "ZOOMLION-ZTC130",
+    brand: "ZOOMLION",
+    tonnage: 130,
+    mainBoom: 70,
+    auxBoom: 97.8,
+    image: "https://sc04.alicdn.com/kf/Hc1c12a033c894207b8b695e3ad5a4257x.jpg",
+    pricePerMonth: 150000000,
+    description: "Yuk ko'tarish quvvati 130 tonnagacha. Asosiy ko'tarish balandligi 70 m. Maksimal ko'tarish balandligi 97,8 m.",
+    specs: {
+      enginePower: "380 kVt",
+      maxSpeed: "70 km/soat",
+      operatingWeight: "72 000 kg",
+      maxLiftHeight: "97.8 m",
+      mainBoomLength: "70 m",
+      maxLoadCapacity: "130 t"
+    },
+    available: true
+  }
+
+];
+
+export const companyInfo = {
+  name: "OOO «SERVIS ANIQ QURUVCHI»",
+  shortName: "AUTOKRAN.UZ",
+  founded: 2011,
+  phone: "+998 93 380 24 42",
+  phoneRaw: "933802442",
+  address: "Uchtepa tumani, Toshkent shahri",
+  telegram: "https://t.me/autokran_uz",
+  instagram: "https://instagram.com/autokran.uz",
+  workHours: "24/7 Xizmatda",
+  description: "O'zbekiston bo'ylab professional avtokran xizmatlari. 30 dan 130 tonnagacha bo'lgan zamonaviy avtokranlar bilan istalgan murakkablikdagi vazifalarni bajaramiz.",
+};
+
+export const partners = [
+  "Discover Invest",
+  "Neft Gaz Montaj"
+];
+
+export const projects = [
+  "GTL zavodi",
+  "Seul Moon",
+  "Nestone",
+  "Tashkent City",
+  "Mega Planet",
+  "Dvores Forum",
+  
+];
+

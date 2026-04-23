@@ -1,0 +1,99 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { craneData, companyInfo } from "@/constants";
+import { MoveRight, Info, CheckCircle, Package } from "lucide-react";
+import { useTranslations, useLocale } from "next-intl";
+
+export const Fleet = () => {
+  const t = useTranslations("Fleet");
+  const locale = useLocale();
+
+  return (
+    <section id="fleet" className="py-32 bg-brand-surface/30 overflow-hidden">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mb-24">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-6xl font-black text-foreground mb-8 tracking-tighter"
+          >
+            {t.rich('title', {
+              br: () => <br />,
+            })} <br/>
+            <span className="text-brand-primary">{t('subtitle')}</span>
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-xl text-foreground/60 font-medium"
+          >
+             {t('description')}
+          </motion.p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {craneData.map((crane, idx) => (
+            <motion.div
+              key={crane.id}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.1 }}
+              className="premium-card group"
+            >
+              <div className="relative h-64 -mx-6 -mt-6 mb-6 overflow-hidden rounded-t-2xl">
+                 <img 
+                    src={crane.image} 
+                    alt={crane.model} 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                 />
+                 <div className="absolute top-4 right-4 bg-brand-primary text-black px-4 py-1.5 rounded-full font-black text-sm shadow-xl">
+                   {crane.tonnage} {t('ton').toUpperCase()}
+                 </div>
+              </div>
+
+              <h3 className="text-2xl font-black text-foreground mb-2 tracking-tight group-hover:text-brand-primary transition-colors">
+                 {crane.model}
+              </h3>
+              <p className="text-foreground/50 text-sm mb-6 leading-relaxed line-clamp-2">
+                 {t('craneDescription', { ton: crane.tonnage })}
+              </p>
+
+              <div className="space-y-3 mb-8 border-t border-brand-primary/10 pt-6 text-sm">
+                <div className="flex justify-between items-center text-foreground/80">
+                  <span className="flex items-center gap-2"><CheckCircle size={16} className="text-brand-primary" /> {t('mainBoom')}</span>
+                  <span className="font-bold text-foreground">{crane.mainBoom}m</span>
+                </div>
+                <div className="flex justify-between items-center text-foreground/80">
+                   <span className="flex items-center gap-2"><CheckCircle size={16} className="text-brand-primary" /> {t('maxBoom')}</span>
+                   <span className="font-bold text-foreground">{crane.auxBoom}m</span>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-4">
+                 <div className="bg-foreground/5 p-4 rounded-xl border border-brand-primary/5">
+                    <span className="text-xs text-foreground/40 font-bold uppercase tracking-widest block mb-1">{t('rentPrice')}</span>
+                    <span className="text-2xl font-black text-foreground" suppressHydrationWarning>
+                      {new Intl.NumberFormat(locale === 'uz' ? 'uz-UZ' : locale === 'ru' ? 'ru-RU' : 'en-US').format(crane.pricePerMonth)} <span className="text-sm font-medium text-foreground/40" suppressHydrationWarning>{t('currency')}</span>
+                    </span>
+                 </div>
+                 
+                 <a 
+                    href={`tel:+998${companyInfo.phoneRaw}`}
+                    className="flex items-center justify-center gap-3 bg-brand-primary hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black text-black p-4 rounded-xl font-black transition-all group/btn shadow-lg shadow-brand-primary/10"
+                 >
+                    {t('order')}
+                    <MoveRight size={20} className="group-hover/btn:translate-x-2 transition-transform" />
+                 </a>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+

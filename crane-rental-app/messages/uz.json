@@ -1,0 +1,74 @@
+{
+  "Navbar": {
+    "about": "Biz haqimizda",
+    "fleet": "Kranlarimiz",
+    "partners": "Hamkorlar",
+    "call": "Bog'lanish",
+    "home": "Asosiy"
+  },
+  "Hero": {
+    "badge": "Professional Avtokran Xizmatlari",
+    "title1": "MURAKKAB",
+    "title2": "LOYIHALAR UCHUN",
+    "title3": "KUCHLI TEXNIKA",
+    "viewFleet": "TEXNIKALARI KO'RISH",
+    "contact": "BIZ BILAN BOG'LANING",
+    "expYears": "YILLIK TAJRIBA",
+    "service": "XIZMATDA",
+    "safety": "XAVFSIZLIK"
+  },
+  "About": {
+    "badge": "Tajribali Jamoa",
+    "featuresTitle": "NIMA UCHUN <span>AYNAN BIZNI TANLASHADI?</span>",
+    "title": "LOYIHALARINGIZ TO'XTAIB QOLMASLIGI UCHUN <span>ISHLAYMIZ</span>",
+    "description": "\"AUTOKRAN.UZ\" brendi ostida biz 12 yildan ortiq vaqtdan beri qurilish va montaj ishlarida ishonchli hamkorlik qilib Kelmoqdamiz.",
+    "projects": "Tugallangan Loyihalar",
+    "experience": "Yillik Tajriba",
+    "features": {
+      "f1": {
+        "title": "TEZ VA SIFATLI XIZMAT",
+        "desc": "Biz har bir mijozning vaqtini qadrlaymiz. Shuning uchun texnikani kelishilgan vaqtda manzilga yetkazib beramiz."
+      },
+      "f2": {
+        "title": "HAMYONBOP NARXLAR",
+        "desc": "O'rta va uzoq muddatli ijaralar uchun bizda har doim o'ziga xos chegirmalar va qulay takliflar bor."
+      },
+      "f3": {
+        "title": "TEXNIK SIFAT",
+        "desc": "Barcha kranlarimiz yangi va xalqaro xavfsizlik standartlariga to'liq javob beradi (LOKI, PPO)."
+      }
+    }
+  },
+  "Partners": {
+    "title1": "ISHONCHLI",
+    "title2": "HAMKORLAR",
+    "projectsTitle": "ISHONCHLI LOYIHALAR",
+    "subtitle": "Barchasiga sifatli xizmat ko'rsatamiz."
+  },
+  "Fleet": {
+    "title": "Sizning loyihangiz uchun",
+    "subtitle": "ENG YAXSHI TEXNIKA",
+    "description": "Bizda 30 tonnadan 130 tonnagacha bo'lgan, zamonaviy va xavfsiz avtokranlar mavjud. Barcha texnikalarimiz muntazam ravishda nazoratdan o'tkaziladi.",
+    "ton": "tonna",
+    "order": "IJARA QILISH",
+    "mainBoom": "Asosiy bum",
+    "maxBoom": "Maks. bum",
+    "rentPrice": "1 OYLIK IJARA PULI",
+    "currency": "so'm",
+    "craneDescription": "Yuk ko'tarish quvvati {ton} tonnagacha. Ishonchli va tezkor texnika."
+  },
+  "Footer": {
+    "description": "O'zbekiston bo'ylab professional avtokran xizmatlari. Biz bilan ishonchli va xavfsiz qurilish.",
+    "links": "MA'LUMOTLAR",
+    "contact": "BOG'LANISH",
+    "quickContact": "TEZKOR BOG'LANISH",
+    "expertCall": "Mutaxassisimiz sizga 5 daqiqa ichida qo'ng'iroq qiladi.",
+    "telegram": "TELEGRAMDA YOZISH",
+    "rights": "BARCHA HUQUQLAR HIMOYA QILINGAN.",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Xizmat ko'rsatish shartlari",
+    "addressLabel": "MANZIL",
+    "phoneLabel": "TELEFON",
+    "faq": "Savol-javoblar"
+  }
+}

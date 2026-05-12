@@ -11,6 +11,7 @@
     "title1": "POWERFUL",
     "title2": "EQUIPMENT FOR",
     "title3": "COMPLEX PROJECTS",
+    "description": "Professional mobile crane services across Uzbekistan. We perform tasks of any complexity with modern mobile cranes from 30 to 130 tons.",
     "viewFleet": "VIEW FLEET",
     "contact": "CONTACT US",
     "expYears": "YEARS EXPERIENCE",
@@ -18,10 +19,10 @@
     "safety": "SAFETY"
   },
   "About": {
-    "badge": "Experienced Team",
-    "featuresTitle": "WHY <br/><span>CHOOSE US?</span>",
-    "title": "WE WORK SO THAT YOUR PROJECTS <br/><span>DO NOT STOP</span>",
-    "description": "Under the \"AUTOKRAN.UZ\" brand, we have been a reliable partner in construction and installation work for more than 12 years.",
+    "badge": "Company",
+    "featuresTitle": "WHY <span>CHOOSE US?</span>",
+    "title": "ABOUT <span>US</span>",
+    "description": "Although our company was officially established in 2013, our practical operations in this field began back in 2007. Through years of rich experience and relentless work, we have learned to make any heavy load feel light. Today, we don't just rent out equipment; we serve as a reliable foundation in the construction of skyscrapers and great structures. We take pride in contributing to the realization of your grandest goals.",
     "projects": "Completed Projects",
     "experience": "Years Experience",
     "features": {
@@ -40,10 +41,10 @@
     }
   },
   "Partners": {
-    "title1": "RELIABLE",
-    "title2": "PARTNERS",
-    "projectsTitle": "RELIABLE PROJECTS",
-    "subtitle": "We provide quality service to everyone."
+    "title1": "UNIFIED",
+    "title2": "ORBIT OF TRUST",
+    "projectsTitle": "SKY-BOUND ACHIEVEMENTS",
+    "subtitle": "Weightless precision. Massive structures effortlessly lifted into the sky, defying physics with ascending excellence."
   },
   "Fleet": {
     "title": "For your project",
@@ -55,7 +56,8 @@
     "maxBoom": "Max. boom",
     "rentPrice": "MONTHLY RENT PRICE",
     "currency": "sum",
-    "craneDescription": "Lifting capacity up to {ton} tons. Reliable and fast equipment."
+    "craneDescription": "Lifting capacity up to {ton} tons. Reliable and fast equipment.",
+    "negotiablePrice": "Prices are negotiable"
   },
   "Footer": {
     "description": "Professional crane services across Uzbekistan. Reliable and safe construction with us.",
@@ -70,5 +72,19 @@
     "addressLabel": "ADDRESS",
     "phoneLabel": "PHONE",
     "faq": "FAQ"
+  },
+  "Booking": {
+    "title": "Book Equipment",
+    "description": "Leave your details and we will get back to help you.",
+    "nameLabel": "Your Name",
+    "namePlaceholder": "John Doe",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "+998 90 123 45 67",
+    "locationLabel": "Geolocation / Address",
+    "locationPlaceholder": "Tashkent city, Yunusobod district...",
+    "submit": "SUBMIT",
+    "sending": "SENDING...",
+    "success": "Your details have been sent successfully!",
+    "error": "An error occurred. Please try again."
   }
 }

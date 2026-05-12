@@ -1,13 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { craneData, companyInfo } from "@/constants";
-import { MoveRight, Info, CheckCircle, Package } from "lucide-react";
+import { craneData } from "@/constants";
+import { MoveRight, CheckCircle } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
+import { useState } from "react";
+import { BookingModal } from "../BookingModal";
 
 export const Fleet = () => {
   const t = useTranslations("Fleet");
   const locale = useLocale();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedCrane, setSelectedCrane] = useState<string | undefined>(undefined);
+
+  const handleBook = (model: string) => {
+    setSelectedCrane(model);
+    setIsModalOpen(true);
+  };
 
   return (
     <section id="fleet" className="py-32 bg-brand-surface/30 overflow-hidden">
@@ -74,24 +83,27 @@ export const Fleet = () => {
               </div>
 
               <div className="flex flex-col gap-4">
-                 <div className="bg-foreground/5 p-4 rounded-xl border border-brand-primary/5">
-                    <span className="text-xs text-foreground/40 font-bold uppercase tracking-widest block mb-1">{t('rentPrice')}</span>
-                    <span className="text-2xl font-black text-foreground" suppressHydrationWarning>
-                      {new Intl.NumberFormat(locale === 'uz' ? 'uz-UZ' : locale === 'ru' ? 'ru-RU' : 'en-US').format(crane.pricePerMonth)} <span className="text-sm font-medium text-foreground/40" suppressHydrationWarning>{t('currency')}</span>
-                    </span>
+                 <div className="text-center py-2 bg-brand-surface rounded-xl border border-brand-primary/10">
+                    <span className="text-sm font-bold text-brand-primary">{t('negotiablePrice')}</span>
                  </div>
                  
-                 <a 
-                    href={`tel:+998${companyInfo.phoneRaw}`}
-                    className="flex items-center justify-center gap-3 bg-brand-primary hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black text-black p-4 rounded-xl font-black transition-all group/btn shadow-lg shadow-brand-primary/10"
-                 >
-                    {t('order')}
-                    <MoveRight size={20} className="group-hover/btn:translate-x-2 transition-transform" />
-                 </a>
-              </div>
+                  <button 
+                     onClick={() => handleBook(crane.model)}
+                     className="flex items-center justify-center gap-3 bg-brand-primary hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black text-black p-4 rounded-xl font-black transition-all group/btn shadow-lg shadow-brand-primary/10 w-full"
+                  >
+                     {t('order')}
+                     <MoveRight size={20} className="group-hover/btn:translate-x-2 transition-transform" />
+                  </button>
+               </div>
             </motion.div>
           ))}
         </div>
+        
+        <BookingModal 
+          isOpen={isModalOpen} 
+          onClose={() => setIsModalOpen(false)} 
+          craneModel={selectedCrane}
+        />
       </div>
     </section>
   );

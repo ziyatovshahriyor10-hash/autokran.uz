@@ -30,7 +30,7 @@ export const Hero = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-foreground/60 max-w-xl mb-12 leading-relaxed">
-            {companyInfo.description}
+            {t('description')}
           </p>
           
           <div className="flex flex-wrap gap-4">
@@ -44,7 +44,7 @@ export const Hero = () => {
           
           <div className="mt-16 flex items-center gap-12 text-sm text-foreground/40 font-bold tracking-widest uppercase border-t border-foreground/5 pt-12">
             <div>
-              <span className="block text-3xl font-black text-foreground mb-1 tracking-tighter">12+</span>
+              <span className="block text-3xl font-black text-foreground mb-1 tracking-tighter">20+</span>
               {t('expYears')}
             </div>
             <div>

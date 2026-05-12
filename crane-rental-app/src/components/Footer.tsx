@@ -1,6 +1,6 @@
 "use client";
 
-import { Globe, Send, Phone, MapPin, MessageCircle } from "lucide-react";
+import { Globe, Send, Phone, MapPin } from "lucide-react";
 import { companyInfo } from "@/constants";
 import { useTranslations } from "next-intl";
 
@@ -11,7 +11,7 @@ export const Footer = () => {
   return (
     <footer className="bg-background pt-24 pb-12 overflow-hidden border-t border-brand-primary/10">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-20">
           <div>
              <div className="flex items-center gap-2 mb-8 group cursor-pointer">
               <div className="w-10 h-10 bg-brand-primary rounded-lg flex items-center justify-center rotate-3 group-hover:rotate-0 transition-transform">
@@ -66,17 +66,6 @@ export const Footer = () => {
              </ul>
           </div>
 
-          <div>
-             <h4 className="text-xl font-black text-foreground mb-8">{t('quickContact')}</h4>
-             <div className="bg-brand-surface p-6 rounded-3xl border border-brand-primary/10 shadow-2xl relative overflow-hidden group">
-                <div className="absolute -top-12 -right-12 w-32 h-32 bg-brand-primary/10 blur-3xl group-hover:bg-brand-primary/20 transition-all" />
-                <p className="text-sm text-foreground/50 mb-6 font-medium italic">{t('expertCall')}</p>
-                <a href={companyInfo.telegram} target="_blank" className="bg-brand-primary text-black w-full py-4 rounded-xl font-black flex items-center justify-center gap-2 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all shadow-xl shadow-brand-primary/20">
-                   <MessageCircle size={20} />
-                   {t('telegram')}
-                </a>
-             </div>
-          </div>
         </div>
 
         <div className="border-t border-brand-primary/5 pt-12 flex flex-col md:flex-row justify-between items-center text-sm font-medium text-foreground/40 uppercase tracking-widest" suppressHydrationWarning>

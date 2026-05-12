@@ -11,6 +11,7 @@
     "title1": "MURAKKAB",
     "title2": "LOYIHALAR UCHUN",
     "title3": "KUCHLI TEXNIKA",
+    "description": "O'zbekiston bo'ylab professional avtokran xizmatlari. 30 dan 130 tonnagacha bo'lgan zamonaviy avtokranlar bilan istalgan murakkablikdagi vazifalarni bajaramiz.",
     "viewFleet": "TEXNIKALARI KO'RISH",
     "contact": "BIZ BILAN BOG'LANING",
     "expYears": "YILLIK TAJRIBA",
@@ -18,16 +19,16 @@
     "safety": "XAVFSIZLIK"
   },
   "About": {
-    "badge": "Tajribali Jamoa",
+    "badge": "Kompaniya",
     "featuresTitle": "NIMA UCHUN <span>AYNAN BIZNI TANLASHADI?</span>",
-    "title": "LOYIHALARINGIZ TO'XTAIB QOLMASLIGI UCHUN <span>ISHLAYMIZ</span>",
-    "description": "\"AUTOKRAN.UZ\" brendi ostida biz 12 yildan ortiq vaqtdan beri qurilish va montaj ishlarida ishonchli hamkorlik qilib Kelmoqdamiz.",
+    "title": "BIZ <span>HAQIMIZDA</span>",
+    "description": "Kompaniyamiz rasman 2013-yilda tashkil topgan bo'lsa-da, bu sohadagi amaliy faoliyatimiz 2007-yildan boshlangan. Yillar davomida orttirilgan boy tajriba va tinimsiz mehnat orqali biz har qanday og'irlikni yengil qilishni o'rgandik. Bugun biz shunchaki texnika ijarasi emas, balki osmono'par binolar va buyuk inshootlar qurilishida ishonchli tayanch vazifasini o'taymiz. Sizning ulkan maqsadlaringiz ro'yobga chiqishida bizning ham o'z hissamiz borligidan faxrlanamiz.",
     "projects": "Tugallangan Loyihalar",
     "experience": "Yillik Tajriba",
     "features": {
       "f1": {
         "title": "TEZ VA SIFATLI XIZMAT",
-        "desc": "Biz har bir mijozning vaqtini qadrlaymiz. Shuning uchun texnikani kelishilgan vaqtda manzilga yetkazib beramiz."
+        "desc": "Biz har bir mijozning vaqtini qadrlaymiz. Shuning uchun texnikani kelishilgan vaqtda manziga yetib borib ishga tushamiz."
       },
       "f2": {
         "title": "HAMYONBOP NARXLAR",
@@ -55,7 +56,8 @@
     "maxBoom": "Maks. bum",
     "rentPrice": "1 OYLIK IJARA PULI",
     "currency": "so'm",
-    "craneDescription": "Yuk ko'tarish quvvati {ton} tonnagacha. Ishonchli va tezkor texnika."
+    "craneDescription": "Yuk ko'tarish quvvati {ton} tonnagacha. Ishonchli va tezkor texnika.",
+    "negotiablePrice": "Narxlar kelishilgan holatda"
   },
   "Footer": {
     "description": "O'zbekiston bo'ylab professional avtokran xizmatlari. Biz bilan ishonchli va xavfsiz qurilish.",
@@ -70,5 +72,19 @@
     "addressLabel": "MANZIL",
     "phoneLabel": "TELEFON",
     "faq": "Savol-javoblar"
+  },
+  "Booking": {
+    "title": "Texnikani band qilish",
+    "description": "Ma'lumotlaringizni qoldiring va biz siz bilan bog'lanamiz.",
+    "nameLabel": "Ismingiz",
+    "namePlaceholder": "Alisher Toshkentov",
+    "phoneLabel": "Telefon raqamingiz",
+    "phonePlaceholder": "+998 90 123 45 67",
+    "locationLabel": "Geolokatsiya / Manzil",
+    "locationPlaceholder": "Toshkent sh., Yunusobod tumani...",
+    "submit": "YUBORISH",
+    "sending": "YUBORILMOQDA...",
+    "success": "Xabaringiz yuborildi! Tez orada siz bilan bog'lanamiz.",
+    "error": "Xatolik yuz berdi. Iltimos qaytadan urinib ko'ring."
   }
 }
